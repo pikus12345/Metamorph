@@ -48,6 +48,8 @@ public class HealthController : MonoBehaviour, IDamageable, IHealable
     [SerializeField] private HealthDisplayer displayer;
     [SerializeField][ReadOnly] private int currentHealth;
     [SerializeField] private int maxHealth;
+
+    public Action OnDie;
     private void RefreshDisplay(int hp, int maxHP)
     {
         currentHealth = hp;
@@ -71,6 +73,7 @@ public class HealthController : MonoBehaviour, IDamageable, IHealable
     }
     private void Die()
     {
+        OnDie?.Invoke();
         Destroy(gameObject);
     }
     public void Hurt(int amount) => health.Hurt(amount);
