@@ -9,10 +9,20 @@ public class KillObjective : MonoBehaviour
 
     private void OnEnable()
     {
-        
+        foreach (var objective in remainObjectives) 
+        {
+            objective.OnDie += () => RemoveObjective(objective);
+        }
+    }
+    private void RemoveObjective(IDamageable damageable)
+    {
+        remainObjectives.Remove(damageable);
     }
     private void OnDisable()
     {
-        
+        foreach (var objective in remainObjectives)
+        {
+            objective.OnDie -= () => RemoveObjective(objective);
+        }
     }
 }

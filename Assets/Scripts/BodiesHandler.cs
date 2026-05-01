@@ -25,31 +25,22 @@ public class BodiesHandler : MonoBehaviour
             case MorphType.Knight:
                 {
                     knightAnimator.gameObject.SetActive(true);
-                    knightAnimator.enabled = true;
                     lizardAnimator.gameObject.SetActive(false);
-                    lizardAnimator.enabled = false;
                     orcAnimator.gameObject.SetActive(false);
-                    orcAnimator.enabled = false;
                     break;
                 }
             case MorphType.Lizard:
                 {
                     knightAnimator.gameObject.SetActive(false);
-                    knightAnimator.enabled = false;
                     lizardAnimator.gameObject.SetActive(true);
-                    lizardAnimator.enabled = true;
                     orcAnimator.gameObject.SetActive(false);
-                    orcAnimator.enabled = false;
                     break;
                 }
             case MorphType.Orc:
                 {
                     knightAnimator.gameObject.SetActive(false);
-                    knightAnimator.enabled = false;
                     lizardAnimator.gameObject.SetActive(false);
-                    lizardAnimator.enabled = false;
                     orcAnimator.gameObject.SetActive(true);
-                    orcAnimator.enabled = true;
                     break;
                 }
         }

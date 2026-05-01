@@ -27,8 +27,17 @@ public class MorphManager : MonoBehaviour
         morphKnightAction.Enable();
         morphLizardAction.performed += MorphLizard;
         morphLizardAction.Enable();
-        morphOrcAction.performed -= MorphOrc;
+        morphOrcAction.performed += MorphOrc;
         morphOrcAction.Enable();
+    }
+    private void OnDisable()
+    {
+        morphKnightAction.performed -= MorphKnight;
+        morphKnightAction.Disable();
+        morphLizardAction.performed -= MorphLizard;
+        morphLizardAction.Disable();
+        morphOrcAction.performed -= MorphOrc;
+        morphOrcAction.Disable();
     }
     private void MorphKnight(InputAction.CallbackContext context) => Morph(MorphType.Knight);
     private void MorphLizard(InputAction.CallbackContext context) => Morph(MorphType.Lizard);
