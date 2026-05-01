@@ -1,22 +1,20 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+public enum MorphType
+{
+    Knight,
+    Lizard,
+    Orc
+}
 public class MorphManager : MonoBehaviour
 {
-    [SerializeField] BodiesAnimatorHandler bodiesAnimatorHandler;
+    [SerializeField] BodiesHandler bodiesAnimatorHandler;
 
     [SerializeField] InputActionAsset inputActions;
     private InputAction morphKnightAction;
     private InputAction morphLizardAction;
     private InputAction morphOrcAction;
-
-    public enum MorphType
-    {
-        Knight,
-        Lizard,
-        Orc
-    }
-
     private void Awake()
     {
         morphKnightAction = inputActions.FindActionMap("Player").FindAction("MorphKnight");

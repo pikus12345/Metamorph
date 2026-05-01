@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BodiesAnimatorHandler : MonoBehaviour
+public class BodiesHandler : MonoBehaviour
 {
     [SerializeField] private Animator knightAnimator;
     [SerializeField] private Animator lizardAnimator;
@@ -17,5 +17,9 @@ public class BodiesAnimatorHandler : MonoBehaviour
         knightAnimator?.SetFloat(id, value);
         lizardAnimator?.SetFloat(id, value);
         orcAnimator?.SetFloat(id, value);
+    }
+    internal void SetAnim(MorphType type)
+    {
+
     }
 }
