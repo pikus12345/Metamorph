@@ -6,6 +6,5 @@ public class LookToCamera : MonoBehaviour
     {
         transform.rotation = Quaternion.LookRotation(transform.position - Camera.main.transform.position);
     }
-
 }
 
