@@ -49,7 +49,7 @@ public class HealthController : MonoBehaviour, IDamageable, IHealable
     [SerializeField][ReadOnly] private int currentHealth;
     [SerializeField] private int maxHealth;
 
-    public Action OnDie;
+    public event Action OnDie;
     private void RefreshDisplay(int hp, int maxHP)
     {
         currentHealth = hp;
