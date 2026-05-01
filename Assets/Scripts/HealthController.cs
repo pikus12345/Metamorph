@@ -52,11 +52,12 @@ public class HealthController : MonoBehaviour
     {
         currentHealth = hp;
         maxHealth = maxHP;
-        displayer.Display(hp, maxHP);
+        displayer?.Display(hp, maxHP);
     }
     private void Awake()
     {
         health = new Health(currentHealth, maxHealth);
+        RefreshDisplay(currentHealth, maxHealth);
     }
     private void OnEnable()
     {
