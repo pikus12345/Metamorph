@@ -23,7 +23,7 @@ public class InteractionManager : MonoBehaviour
     }
     private void TryInteract(InputAction.CallbackContext c)
     {
-        interactivable.Interact();
+        interactivable?.Interact();
     }
     private void ShowHint(string hintText)
     {
