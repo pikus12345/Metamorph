@@ -1,6 +1,18 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class KillObjective : MonoBehaviour
 {
-    [SerializeField] private IDamageable[] objectives;
+    [SerializeField] IDamageable[] objectives;
+    private List<IDamageable> remainObjectives;
+
+
+    private void OnEnable()
+    {
+        
+    }
+    private void OnDisable()
+    {
+        
+    }
 }

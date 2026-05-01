@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1061388569101976118}
   - component: {fileID: 7241052325951335932}
+  - component: {fileID: 5291321129253356598}
   m_Layer: 0
   m_Name: Lever
   m_TagString: Untagged
@@ -96,6 +97,27 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.000041887164, y: 0.0031325757, z: -0.011748336}
     m_Extent: {x: 0.0065100184, y: 0.011571549, z: 0.011587579}
   m_DirtyAABB: 0
+--- !u!65 &5291321129253356598
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880650667666410048}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.002709725, y: 0.0048232037, z: 0.0048165317}
+  m_Center: {x: 0.00000871754, y: 0.0024450584, z: 0.00065195054}
 --- !u!1 &2119240015031447771
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,7 +192,6 @@ GameObject:
   - component: {fileID: 6093959270357908803}
   - component: {fileID: 3659088818713294420}
   - component: {fileID: 2747845047291568086}
-  - component: {fileID: 2397249285664278935}
   m_Layer: 0
   m_Name: Lever
   m_TagString: Untagged
@@ -263,27 +284,6 @@ MonoBehaviour:
         m_CallState: 2
   animator: {fileID: 3659088818713294420}
   isActivated: 0
---- !u!65 &2397249285664278935
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4277016432901015447}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.002709725, y: 0.0048232037, z: 0.0048165317}
-  m_Center: {x: 0.00000871754, y: 0.0024450584, z: 0.00065195054}
 --- !u!1 &5896063249402289216
 GameObject:
   m_ObjectHideFlags: 0
