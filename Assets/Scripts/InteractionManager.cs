@@ -1,9 +1,30 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class InteractionManager : MonoBehaviour
 {
     [SerializeField] private TMP_Text hint;
+    [SerializeField] private InputActionAsset inputActions;
+    private IInteractivable interactivable = null;
+    private InputAction interactAction;
+
+    private void Awake()
+    {
+        interactAction = inputActions?.FindActionMap("Player").FindAction("Interact");
+    }
+    private void OnEnable()
+    {
+        interactAction.performed += TryInteract;
+    }
+    private void OnDisable()
+    {
+        interactAction.performed -= TryInteract;
+    }
+    private void TryInteract(InputAction.CallbackContext c)
+    {
+        interactivable.Interact();
+    }
     private void ShowHint(string hintText)
     {
         hint?.gameObject.SetActive(true);
@@ -15,7 +36,7 @@ public class InteractionManager : MonoBehaviour
     }
     public void Hit(RaycastHit[] hits)
     {
-        IInteractivable interactivable = null;
+        interactivable = null;
         foreach (RaycastHit hit in hits)
         {
             if (hit.collider.TryGetComponent<IInteractivable>(out interactivable))
