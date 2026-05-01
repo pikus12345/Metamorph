@@ -15,6 +15,9 @@ public class InteractionAreaHandler : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward * distance, out hit))
             if(hit.distance < distance)
+            {
+                Gizmos.color = Color.black;
                 Gizmos.DrawWireSphere(hit.point, areaRadius);
+            }
     }
 }

@@ -17,12 +17,25 @@ public class HealthDisplayer : MonoBehaviour
         }
         for (int i = 0; i < initializedHearts.Length; i++)
         {
-            if (maxHP / 2 == i)
-                initializedHearts[i].sprite = halfHeart;
-            else if (maxHP / 2 > i)
+            // Определяем, сколько HP остается для этого сердечка
+            // Каждое сердечко представляет 2 единицы здоровья
+            int remainingHP = amount - (i * 2);
+
+            if (remainingHP >= 2)
+            {
+                // Сердечко полностью заполнено
                 initializedHearts[i].sprite = fullHeart;
+            }
+            else if (remainingHP == 1)
+            {
+                // Сердечко заполнено наполовину
+                initializedHearts[i].sprite = halfHeart;
+            }
             else
+            {
+                // Сердечко пустое
                 initializedHearts[i].sprite = emptyHeart;
+            }
         }
     }
     public void InitializeHearts(int maxHP)

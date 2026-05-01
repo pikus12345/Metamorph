@@ -28,7 +28,7 @@
                     "name": "Jump",
                     "type": "Button",
                     "id": "8c4abdf8-4099-493a-aa1a-129acec7c3df",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -73,6 +73,15 @@
                     "name": "Interact",
                     "type": "Button",
                     "id": "9cc217d8-a4ab-47b4-a148-296c6f2a6a5a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Attack",
+                    "type": "Button",
+                    "id": "7688d6c5-aec3-4789-ab3d-e8faf8fdfc96",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -308,6 +317,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "eddc6f29-e035-4a0a-aa5e-7fda994dd715",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

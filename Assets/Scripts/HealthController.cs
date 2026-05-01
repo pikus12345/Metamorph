@@ -42,7 +42,7 @@ public class Health
         OnDie?.Invoke();
     }
 }
-public class HealthController : MonoBehaviour
+public class HealthController : MonoBehaviour, IDamageable, IHealable
 {
     private Health health;
     [SerializeField] private HealthDisplayer displayer;
@@ -71,6 +71,8 @@ public class HealthController : MonoBehaviour
     }
     private void Die()
     {
-        Debug.Log("Died");
+        Destroy(gameObject);
     }
+    public void Hurt(int amount) => health.Hurt(amount);
+    public void Heal(int amount) => health.Heal(amount);
 }

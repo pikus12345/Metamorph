@@ -4202,7 +4202,7 @@ GameObject:
   - component: {fileID: 2325726245825398795}
   - component: {fileID: 3043784266867703537}
   - component: {fileID: 1067187029129765255}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -4224,6 +4224,7 @@ Transform:
   m_Children:
   - {fileID: 4294717836563646966}
   - {fileID: 235810012433861843}
+  - {fileID: 5489356032195078278}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!143 &501879072749661482
@@ -4910,6 +4911,57 @@ Transform:
   - {fileID: 2706697271067293874}
   m_Father: {fileID: 9189659585630215874}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6315320590063790629
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5489356032195078278}
+  - component: {fileID: 5458733703180594558}
+  m_Layer: 8
+  m_Name: AttackController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5489356032195078278
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6315320590063790629}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.362926, y: 0, z: 0, w: 0.931818}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7572502055375901356}
+  m_LocalEulerAnglesHint: {x: -42.56, y: 0, z: 0}
+--- !u!114 &5458733703180594558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6315320590063790629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6835c7589c80bb849984f4e05ceb8fae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AttackController
+  inputActions: {fileID: -944628639613478452, guid: 4419d82f33d36e848b3ed5af4c8da37e, type: 3}
+  damage: 2
+  attackDistance: 1.5
+  attackRadius: 1
+  mask:
+    serializedVersion: 2
+    m_Bits: 55
 --- !u!1 &6349135575937584883
 GameObject:
   m_ObjectHideFlags: 0
