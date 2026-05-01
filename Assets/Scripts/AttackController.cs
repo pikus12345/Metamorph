@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class AttackController : MonoBehaviour
 {
+    [Header("Damage settings")]
     [SerializeField] private int damage;
 
     [Header("Attack area settings")]

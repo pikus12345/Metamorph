@@ -3,13 +3,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerAttackController : AttackController
 {
+    [Header("Input Actions")]
     [SerializeField] private InputActionAsset inputActions;
-    [SerializeField] private int damage;
-
-    [Header("Attack area settings")]
-    [SerializeField] private float attackDistance;
-    [SerializeField] private float attackRadius;
-    [SerializeField] private LayerMask mask;
 
     InputAction attackAction;
 
@@ -26,5 +21,8 @@ public class PlayerAttackController : AttackController
     {
         attackAction.performed -= Attack;
     }
-    public void Attack(InputAction.CallbackContext c) => Attack();
+    public void Attack(InputAction.CallbackContext c)
+    {
+        Attack();
+    }
 }

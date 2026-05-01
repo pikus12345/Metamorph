@@ -5,6 +5,5 @@ using Unity.Behavior;
 public enum State
 {
 	Chase,
-	Patrol,
-	Attack
+	Patrol
 }

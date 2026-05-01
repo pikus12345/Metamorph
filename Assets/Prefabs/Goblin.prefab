@@ -67,6 +67,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8483465196298072754, guid: 9d48c0137544a1d40b19169e70b0287c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 482911479400866043}
+    - targetCorrespondingSourceObject: {fileID: 8483465196298072754, guid: 9d48c0137544a1d40b19169e70b0287c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6721403920486318520}
+    - targetCorrespondingSourceObject: {fileID: 8483465196298072754, guid: 9d48c0137544a1d40b19169e70b0287c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4537505416370505564}
     - targetCorrespondingSourceObject: {fileID: 5495962106740157265, guid: 9d48c0137544a1d40b19169e70b0287c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1652040972783204114}
@@ -98,6 +104,53 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &6721403920486318520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5042379028842328412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Behavior::Unity.Behavior.BehaviorGraphAgent
+  m_Graph: {fileID: 2353311574816974190, guid: cd9bca045e9bddf45937adaac6295860, type: 2}
+  m_BlackboardVariableOverridesList:
+  - rid: 1188889865535357166
+  m_OriginalGraph: {fileID: 0}
+  m_IsInitialised: 0
+  m_IsStarted: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 1188889865535357166
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 5042379028842328412}
+--- !u!114 &4537505416370505564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5042379028842328412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c069730dacd92e4eb056c3e4c0e5b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AttackController
+  damage: 1
+  attackDistance: 0.75
+  attackRadius: 0.75
+  mask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &8936522432760244415 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5495962106740157265, guid: 9d48c0137544a1d40b19169e70b0287c, type: 3}

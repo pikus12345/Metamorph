@@ -5126,13 +5126,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6835c7589c80bb849984f4e05ceb8fae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AttackController
-  inputActions: {fileID: -944628639613478452, guid: 4419d82f33d36e848b3ed5af4c8da37e, type: 3}
   damage: 2
   attackDistance: 1.5
   attackRadius: 1
   mask:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 128
+  inputActions: {fileID: -944628639613478452, guid: 4419d82f33d36e848b3ed5af4c8da37e, type: 3}
 --- !u!1 &6349135575937584883
 GameObject:
   m_ObjectHideFlags: 0
