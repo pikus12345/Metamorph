@@ -9,7 +9,7 @@ public enum MorphType
 }
 public class MorphManager : MonoBehaviour
 {
-    [SerializeField] BodiesHandler bodiesAnimatorHandler;
+    [SerializeField] BodiesHandler bodiesHandler;
 
     [SerializeField] InputActionAsset inputActions;
     private InputAction morphKnightAction;
@@ -40,17 +40,20 @@ public class MorphManager : MonoBehaviour
         {
             case MorphType.Knight:
                 {
-                    Debug.Log("Knight");
+                    Debug.Log("Knight selected");
+                    bodiesHandler.SetBody(MorphType.Knight);
                     break;
                 }
             case MorphType.Lizard:
                 {
-                    Debug.Log("Lizard");
+                    Debug.Log("Lizard selected");
+                    bodiesHandler.SetBody(MorphType.Lizard);
                     break;
                 }
             case MorphType.Orc:
                 {
-                    Debug.Log("Orc");
+                    Debug.Log("Orc selected");
+                    bodiesHandler.SetBody(MorphType.Orc);
                     break;
                 }
         }
