@@ -1382,6 +1382,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9107365034923278580}
   - component: {fileID: 5935133372589716023}
+  - component: {fileID: 3396872817177367844}
   m_Layer: 8
   m_Name: InteractionArea
   m_TagString: Untagged
@@ -1425,6 +1426,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3396872817177367844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962295667163697757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1fd992910fb6b943bd622a7a7a0e392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  interactionManager: {fileID: 3043784266867703537}
 --- !u!1 &2142495439903294386
 GameObject:
   m_ObjectHideFlags: 0
