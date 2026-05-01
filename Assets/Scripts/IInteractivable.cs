@@ -2,5 +2,6 @@ using UnityEngine;
 
 public interface IInteractivable
 {
-    public void Activate();
+    public string DisplayHint { get;}
+    public void Interact();
 }

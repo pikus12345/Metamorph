@@ -5709,7 +5709,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa725b0f92238f45a6f173cd2ff4d92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  isActivatingByLever: 0
+  isActivatingByLever: 1
+  Hint: '[F]'
 --- !u!1 &9103020857094097876
 GameObject:
   m_ObjectHideFlags: 0

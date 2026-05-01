@@ -1,17 +1,33 @@
+using TMPro;
 using UnityEngine;
 
 public class InteractionManager : MonoBehaviour
 {
-    public void TriggerEnter(Collider other)
+    [SerializeField] private TMP_Text hint;
+    private void ShowHint(string hintText)
     {
-
+        hint?.gameObject.SetActive(true);
+        hint.text = hintText;
     }
-    public void TriggerStay(Collider other)
+    private void HideHint()
     {
-
+        hint?.gameObject.SetActive(false);
     }
-    public void TriggerExit(Collider other)
+    public void Hit(RaycastHit[] hits)
     {
-
+        IInteractivable interactivable = null;
+        foreach (RaycastHit hit in hits)
+        {
+            if (hit.collider.TryGetComponent<IInteractivable>(out interactivable))
+                break;
+        }
+        if(interactivable != null)
+        {
+            ShowHint(interactivable.DisplayHint);
+        }
+        else
+        {
+            HideHint();
+        }
     }
 }

@@ -3,7 +3,10 @@ using UnityEngine;
 public class Door : MonoBehaviour, IInteractivable
 {
     [SerializeField] private bool isActivatingByLever;
-    public void Activate()
+    [SerializeField] private string Hint;
+
+    public string DisplayHint => Hint;
+    public void Interact()
     {
         if (isActivatingByLever)
         {

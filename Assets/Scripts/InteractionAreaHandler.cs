@@ -3,16 +3,18 @@ using UnityEngine;
 public class InteractionAreaHandler : MonoBehaviour
 {
     [SerializeField] private InteractionManager interactionManager;
-    private void OnTriggerEnter(Collider other)
+    [SerializeField] private float distance = 5f;
+    [SerializeField] private float areaRadius = 2f;
+    private void Update()
     {
-        interactionManager.TriggerEnter(other);
+        RaycastHit[] hits = Physics.SphereCastAll(transform.position, areaRadius, transform.forward, distance);
+        interactionManager.Hit(hits);
     }
-    private void OnTriggerStay(Collider other)
+    private void OnDrawGizmos()
     {
-        interactionManager.TriggerStay(other);
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        interactionManager.TriggerExit(other);
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, transform.forward * distance, out hit))
+            if(hit.distance < distance)
+                Gizmos.DrawWireSphere(hit.point, areaRadius);
     }
 }
