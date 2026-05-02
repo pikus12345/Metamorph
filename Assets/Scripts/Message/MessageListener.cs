@@ -7,7 +7,7 @@ public class MessageListener : MonoBehaviour
         MessageTrigger msgTrigger;
         if (other.TryGetComponent(out msgTrigger)) 
         {
-            MessageManager.Instance.ShowMessage(msgTrigger.Message);
+            MessageManager.Instance.ShowMessage(msgTrigger.GetMessage());
         }
     }
 }

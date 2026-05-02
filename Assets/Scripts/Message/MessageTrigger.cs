@@ -2,5 +2,10 @@ using UnityEngine;
 
 public class MessageTrigger : MonoBehaviour
 {
-    public string Message;
+    [SerializeField] string Message;
+    public string GetMessage()
+    {
+        Destroy(gameObject);
+        return Message;
+    }
 }
