@@ -45,9 +45,20 @@ public class Health
 public class HealthController : MonoBehaviour, IDamageable, IHealable
 {
     private Health health;
-    [SerializeField] private HealthDisplayer displayer;
+
+    
+
+    [Header("Health Settings")]
     [SerializeField][ReadOnly] private int currentHealth;
     [SerializeField] private int maxHealth;
+
+    [Header("Display")]
+    [SerializeField] private HealthDisplayer displayer;
+
+    [Header("Audio Settings")]
+    [SerializeField] private AudioSource hurtAudio;
+    [SerializeField] private AudioSource healAudio;
+    [SerializeField] private AudioSource deathAudio;
 
     public event Action OnDie;
     private void RefreshDisplay(int hp, int maxHP)
@@ -74,8 +85,18 @@ public class HealthController : MonoBehaviour, IDamageable, IHealable
     private void Die()
     {
         OnDie?.Invoke();
-        Destroy(gameObject);
+        deathAudio.Play();
+        Destroy(gameObject, 1);
+        Destroy(this);
     }
-    public void Hurt(int amount) => health.Hurt(amount);
-    public void Heal(int amount) => health.Heal(amount);
+    public void Hurt(int amount) 
+    {
+        hurtAudio?.Play();
+        health.Hurt(amount); 
+    }
+    public void Heal(int amount) 
+    {
+        healAudio?.Play();
+        health.Heal(amount);
+    }
 }

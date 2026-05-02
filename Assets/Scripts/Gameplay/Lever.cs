@@ -12,6 +12,8 @@ public class Lever : MonoBehaviour, IInteractivable
 
     [SerializeField] private Animator animator;
     [SerializeField] private bool isActivated;
+
+    [SerializeField] private AudioSource interactAudio;
     public string DisplayHint => isActivated ? DeactivateHint : ActivateHint;
     public bool Interact()
     {
@@ -19,6 +21,7 @@ public class Lever : MonoBehaviour, IInteractivable
             Deactivate();
         else
             Activate();
+        interactAudio.Play();
         return true;
     }
     private void Activate()

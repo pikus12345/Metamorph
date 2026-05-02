@@ -2,9 +2,16 @@ using UnityEngine;
 
 public class Door : MonoBehaviour, IInteractivable
 {
+    [Header("Door Settings")]
     [SerializeField] private bool isActivatingByLever;
     [SerializeField] private string Hint;
+
+    [Header("Animation Settings")]
     [SerializeField] private Animator animator;
+
+    [Header("Audio Settings")]
+    [SerializeField] private AudioSource DoorCloseSrc;
+    [SerializeField] private AudioSource DoorOpenSrc;
 
     private bool isOpened = false;
 
@@ -24,14 +31,14 @@ public class Door : MonoBehaviour, IInteractivable
     }
     public void Open()
     {
-        Debug.Log("Дверь открывается");
         isOpened = true;
         animator?.SetBool("Opened", isOpened);
+        DoorOpenSrc.Play();
     }
     public void Close() 
     {
-        Debug.Log("Дверь закрывается");
         isOpened = false;
         animator?.SetBool("Opened", isOpened);
+        DoorCloseSrc.Play();
     }
 }
