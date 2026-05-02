@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-7466714296854750400
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: footstepshrek1_{-7466714296854750400}
+  m_AudioClip: {fileID: 8300000, guid: 5fdf31f6a98636d44ac578800a977058, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-4966661762006144942
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: footstepshrek4_{-4966661762006144942}
+  m_AudioClip: {fileID: 8300000, guid: 1540b5b33e535924e937bf0dc32ef753, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1582816730983627089
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: footstepshrek3_{-1582816730983627089}
+  m_AudioClip: {fileID: 8300000, guid: 52075273dab8c774999939074378cff3, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &5312999478712855351
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: footstepshrek2_{5312999478712855351}
+  m_AudioClip: {fileID: 8300000, guid: 2e0a77dc9c5cf2941a6313f1dcb4bd8d, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: OgreFootstep
+  m_Volume: 0
+  m_Pitch: 0
+  m_AutomaticTriggerTime: 0
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: 0, y: 0}
+  m_PitchRandomizationRange: {x: -102.127716, y: 102.127655}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: -7466714296854750400}
+  - {fileID: 5312999478712855351}
+  - {fileID: -1582816730983627089}
+  - {fileID: -4966661762006144942}
+  m_AvoidRepeatingLast: 0
+  m_PlaybackMode: 0
+  m_TriggerMode: 0
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 2
+  m_VolumeRandomizationEnabled: 0
+  m_PitchRandomizationEnabled: 1
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0

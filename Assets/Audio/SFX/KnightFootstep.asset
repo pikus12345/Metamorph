@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-8692513929270343982
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: footstep3_{-8692513929270343982}
+  m_AudioClip: {fileID: 8300000, guid: 5f283d6616ccf8040a4e9c244d6a7fce, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-5316179966558317130
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: footstep2_{-5316179966558317130}
+  m_AudioClip: {fileID: 8300000, guid: 978963006e1d9d84dbd232c54fa9d177, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &2918564393884280117
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: footstep4_{2918564393884280117}
+  m_AudioClip: {fileID: 8300000, guid: c16d88c4434a39f42b7b1a199244a38d, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: KnightFootstep
+  m_Volume: 0
+  m_Pitch: 0
+  m_AutomaticTriggerTime: 0
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: 0, y: 0}
+  m_PitchRandomizationRange: {x: -51.063828, y: 153.19147}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: 7539697006864585825}
+  - {fileID: -5316179966558317130}
+  - {fileID: -8692513929270343982}
+  - {fileID: 2918564393884280117}
+  m_AvoidRepeatingLast: 0
+  m_PlaybackMode: 0
+  m_TriggerMode: 0
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 2
+  m_VolumeRandomizationEnabled: 0
+  m_PitchRandomizationEnabled: 1
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0
+--- !u!1233149941 &7539697006864585825
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: footstep1_{7539697006864585825}
+  m_AudioClip: {fileID: 8300000, guid: 0dd37522d89a4834588374a12dcf9e71, type: 3}
+  m_Volume: 0
+  m_Enabled: 1

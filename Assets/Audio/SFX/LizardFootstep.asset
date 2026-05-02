@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-6388319258990867406
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: yasherfootstep4_{-6388319258990867406}
+  m_AudioClip: {fileID: 8300000, guid: 6dddb86be437d634ab8fc14acd375af3, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1516402210097298532
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: yasherfootstep2_{-1516402210097298532}
+  m_AudioClip: {fileID: 8300000, guid: e43cd83172ee6e94396fea9dc09ec9b8, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1040349884753064550
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: yasherfootstep3_{-1040349884753064550}
+  m_AudioClip: {fileID: 8300000, guid: 5ded31e729c009b4b9e78c78ca659b0a, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LizardFootstep
+  m_Volume: 0
+  m_Pitch: 0
+  m_AutomaticTriggerTime: 0
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: 0, y: 0}
+  m_PitchRandomizationRange: {x: -51.063843, y: 51.063843}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: 7173326567601054051}
+  - {fileID: -1516402210097298532}
+  - {fileID: -1040349884753064550}
+  - {fileID: -6388319258990867406}
+  m_AvoidRepeatingLast: 0
+  m_PlaybackMode: 0
+  m_TriggerMode: 0
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 2
+  m_VolumeRandomizationEnabled: 0
+  m_PitchRandomizationEnabled: 1
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0
+--- !u!1233149941 &7173326567601054051
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: yasherfootstep1_{7173326567601054051}
+  m_AudioClip: {fileID: 8300000, guid: d6ef7d05b86d991449d95e60e84fbf4a, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
