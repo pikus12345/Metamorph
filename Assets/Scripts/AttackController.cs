@@ -23,7 +23,7 @@ public class AttackController : MonoBehaviour
             }
         }
     }
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Vector3 areaPos = transform.position + transform.forward * attackDistance;

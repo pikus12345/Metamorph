@@ -12,6 +12,7 @@ public class MorphManager : MonoBehaviour
     [SerializeField] BodiesHandler bodiesHandler;
 
     [SerializeField] InputActionAsset inputActions;
+    [SerializeField] Animator morphesAnimator;
     private InputAction morphKnightAction;
     private InputAction morphLizardAction;
     private InputAction morphOrcAction;
@@ -50,18 +51,21 @@ public class MorphManager : MonoBehaviour
             case MorphType.Knight:
                 {
                     Debug.Log("Knight selected");
+                    morphesAnimator.SetTrigger("Knight");
                     bodiesHandler.SetBody(MorphType.Knight);
                     break;
                 }
             case MorphType.Lizard:
                 {
                     Debug.Log("Lizard selected");
+                    morphesAnimator.SetTrigger("Lizard");
                     bodiesHandler.SetBody(MorphType.Lizard);
                     break;
                 }
             case MorphType.Orc:
                 {
                     Debug.Log("Orc selected");
+                    morphesAnimator.SetTrigger("Ogre");
                     bodiesHandler.SetBody(MorphType.Orc);
                     break;
                 }
