@@ -11,11 +11,14 @@ public class MorphManager : MonoBehaviour
 {
     [SerializeField] BodiesHandler bodiesHandler;
 
+    [SerializeField] MorphType currentMorph;
     [SerializeField] InputActionAsset inputActions;
     [SerializeField] Animator morphesAnimator;
+    [SerializeField] byte rafRemain = 0;
     private InputAction morphKnightAction;
     private InputAction morphLizardAction;
     private InputAction morphOrcAction;
+
     private void Awake()
     {
         morphKnightAction = inputActions.FindActionMap("Player").FindAction("MorphKnight");
@@ -46,6 +49,8 @@ public class MorphManager : MonoBehaviour
 
     internal void Morph(MorphType type)
     {
+        if (rafRemain == 0 || currentMorph == type) return;
+        rafRemain--;
         switch (type)
         {
             case MorphType.Knight:
@@ -71,4 +76,5 @@ public class MorphManager : MonoBehaviour
                 }
         }
     }
+
 }
