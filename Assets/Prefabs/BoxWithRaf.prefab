@@ -138,6 +138,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Raf
       objectReference: {fileID: 0}
+    - target: {fileID: 6864667650352563020, guid: b53b844a60a8f9149b22315ae8463b85, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
