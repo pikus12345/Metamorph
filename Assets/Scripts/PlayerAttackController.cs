@@ -3,6 +3,9 @@ using UnityEngine.InputSystem;
 
 public class PlayerAttackController : AttackController
 {
+    [Header("Animaton Settings")]
+    [SerializeField] BodiesHandler bodiesHandler;
+
     [Header("Input Actions")]
     [SerializeField] private InputActionAsset inputActions;
 
@@ -11,6 +14,10 @@ public class PlayerAttackController : AttackController
     private void Awake()
     {
         attackAction = inputActions?.FindActionMap("Player").FindAction("Attack");
+    }
+    protected override void PlayAnimation()
+    {
+        bodiesHandler.SetTrigger("Attack");
     }
 
     private void OnEnable()

@@ -86,7 +86,7 @@ public class HealthController : MonoBehaviour, IDamageable, IHealable
     {
         OnDie?.Invoke();
         deathAudio.Play();
-        Destroy(gameObject, 1);
+        Destroy(gameObject);
         Destroy(this);
     }
     public void Hurt(int amount) 

@@ -18,6 +18,12 @@ public class BodiesHandler : MonoBehaviour
         lizardAnimator?.SetFloat(id, value);
         orcAnimator?.SetFloat(id, value);
     }
+    internal void SetTrigger(string id)
+    {
+        knightAnimator?.SetTrigger(id);
+        lizardAnimator?.SetTrigger(id);
+        orcAnimator?.SetTrigger(id);
+    }
     internal void SetBody(MorphType type)
     {
         switch (type)

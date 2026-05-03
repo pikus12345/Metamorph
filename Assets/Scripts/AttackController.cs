@@ -10,7 +10,13 @@ public class AttackController : MonoBehaviour
     [SerializeField] private float attackDistance;
     [SerializeField] private float attackRadius;
     [SerializeField] private LayerMask mask;
+
+    [SerializeField] private Animator animator;
     public void Attack()
+    {
+        PlayAnimation();
+    }
+    public void DoDamage()
     {
         Vector3 areaPos = transform.position + transform.forward * attackDistance;
         Collider[] hits = Physics.OverlapSphere(areaPos, attackRadius, mask, QueryTriggerInteraction.Ignore);
@@ -22,6 +28,10 @@ public class AttackController : MonoBehaviour
                 damageable.Hurt(damage);
             }
         }
+    }
+    protected virtual void PlayAnimation()
+    {
+        animator?.SetTrigger("Attack");
     }
     private void OnDrawGizmosSelected()
     {

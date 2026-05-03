@@ -23,6 +23,7 @@ public class Raf : MonoBehaviour, IInteractivable
     {
         if (!enabledPickup) return false;
         morphManager.AddRafs(1);
+        morphManager.gameObject.GetComponent<HealthController>().Heal(100);
 
         if (OpenKnight) morphManager.OpenKnightMorph();
         if (OpenLizard) morphManager.OpenLizardMorph();
