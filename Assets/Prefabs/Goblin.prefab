@@ -293,7 +293,7 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: 68634b761f0f7425ea3c092cd5023646, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 6c6348ed6a6807b40ab4d4a204e8120e, type: 2}
+      objectReference: {fileID: 9100000, guid: 8ff31968b61f10c45bf6f622ef260150, type: 2}
     - target: {fileID: 8991663845242928450, guid: 68634b761f0f7425ea3c092cd5023646, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -402,7 +402,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -499,7 +499,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

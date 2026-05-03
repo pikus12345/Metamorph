@@ -96,7 +96,8 @@ public class HealthController : MonoBehaviour, IDamageable, IHealable
     }
     public void Heal(int amount) 
     {
-        healAudio?.Play();
+        if(healAudio != null)
+            healAudio.Play();
         health.Heal(amount);
     }
 }

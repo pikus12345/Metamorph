@@ -9,7 +9,7 @@ public class Box : MonoBehaviour, IDamageable
     public event Action OnDie;
     public void Hurt(int amount)
     {
-        if (amount <= 3) return;
+        if (amount < 3) return;
         content?.transform.SetParent(null, true);
         content?.SetActive(true);
         destroySound?.Play();

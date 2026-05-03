@@ -39,6 +39,7 @@ public class WoodenDoor : MonoBehaviour, IInteractivable, IDamageable
 
     public void Hurt(int amount)
     {
-        if(amount >= 3) Open();
+        if (amount < 3) return;
+        Open();
     }
 }

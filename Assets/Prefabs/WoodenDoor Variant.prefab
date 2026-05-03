@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 158679289982815328, guid: ba580bb239354e34d8791014458efe35, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 6418180475301049370, guid: f6a8b0450dbe55245ab4d53ffc9b3dce, type: 2}
     - target: {fileID: 2513649622228273239, guid: ba580bb239354e34d8791014458efe35, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.387207
@@ -52,9 +56,21 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2618280115426741432, guid: ba580bb239354e34d8791014458efe35, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 41e7f0ad903839444a3fc2510b245209, type: 2}
     - target: {fileID: 3320880971943081142, guid: ba580bb239354e34d8791014458efe35, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3320880971943081142, guid: ba580bb239354e34d8791014458efe35, type: 3}
+      propertyPath: m_VersionIndex
+      value: 3303
+      objectReference: {fileID: 0}
+    - target: {fileID: 3515351053989561057, guid: ba580bb239354e34d8791014458efe35, type: 3}
+      propertyPath: m_VersionIndex
+      value: 3303
       objectReference: {fileID: 0}
     - target: {fileID: 4777668379189357064, guid: ba580bb239354e34d8791014458efe35, type: 3}
       propertyPath: m_Name
@@ -68,9 +84,41 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7657925759331586935, guid: ba580bb239354e34d8791014458efe35, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 6418180475301049370, guid: f6a8b0450dbe55245ab4d53ffc9b3dce, type: 2}
+    m_RemovedComponents:
+    - {fileID: 5618736436467418337, guid: ba580bb239354e34d8791014458efe35, type: 3}
     m_RemovedGameObjects:
     - {fileID: 2456661783848601878, guid: ba580bb239354e34d8791014458efe35, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4777668379189357064, guid: ba580bb239354e34d8791014458efe35, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6847831723070087898}
   m_SourcePrefab: {fileID: 100100000, guid: ba580bb239354e34d8791014458efe35, type: 3}
+--- !u!1 &6545275330373076723 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4777668379189357064, guid: ba580bb239354e34d8791014458efe35, type: 3}
+  m_PrefabInstance: {fileID: 1772392059214327035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6847831723070087898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6545275330373076723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f902a332b4896fc47af3fd3cb3104ded, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Box
+  content: {fileID: 0}
+  destroySound: {fileID: 8277237644425215884}
+--- !u!82 &8277237644425215884 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7657925759331586935, guid: ba580bb239354e34d8791014458efe35, type: 3}
+  m_PrefabInstance: {fileID: 1772392059214327035}
+  m_PrefabAsset: {fileID: 0}
