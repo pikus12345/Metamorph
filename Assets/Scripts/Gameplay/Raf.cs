@@ -12,24 +12,37 @@ public class Raf : MonoBehaviour, IInteractivable
 
     [SerializeField] private bool enabledPickup;
 
+    [SerializeField] private float respawnWaiting;
+    [SerializeField] private GameObject rafModel;
+
     private void Awake()
     {
         morphManager = FindAnyObjectByType<MorphManager>();
     }
     public bool Interact()
     {
+        if (!enabledPickup) return false;
         morphManager.AddRafs(1);
 
         if (OpenKnight) morphManager.OpenKnightMorph();
         if (OpenLizard) morphManager.OpenLizardMorph();
         if (OpenOgre) morphManager.OpenOrcMorph();
 
-        enabled = false;
+        enabledPickup = false;
+        rafModel.SetActive(false);
+        StartCoroutine(WaitingForRespawn());
 
         return true;
     }
+    private void Respawn()
+    {
+        rafModel.SetActive(true);
+        enabledPickup = true;
+    }
     IEnumerator WaitingForRespawn()
     {
-        
+        yield return new WaitUntil(() => morphManager.RafRemain == 0);
+        yield return new WaitForSeconds(respawnWaiting);
+        Respawn();
     }
 }

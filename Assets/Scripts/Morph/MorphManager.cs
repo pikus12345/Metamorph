@@ -77,12 +77,12 @@ public class MorphManager : MonoBehaviour
     internal void Morph(MorphType type)
     {
         if (rafRemain == 0 || currentMorph == type) return;
-        rafRemain--;
-        currentMorph = type;
+       
         switch (type)
         {
             case MorphType.Knight:
                 {
+                    if (!isKnightOpened) return;
                     Debug.Log("Knight selected");
                     morphesAnimator.SetTrigger("Knight");
                     bodiesHandler.SetBody(MorphType.Knight);
@@ -90,6 +90,7 @@ public class MorphManager : MonoBehaviour
                 }
             case MorphType.Lizard:
                 {
+                    if (!isLizardOpened) return;
                     Debug.Log("Lizard selected");
                     morphesAnimator.SetTrigger("Lizard");
                     bodiesHandler.SetBody(MorphType.Lizard);
@@ -97,12 +98,15 @@ public class MorphManager : MonoBehaviour
                 }
             case MorphType.Orc:
                 {
+                    if (!isOrcOpened) return;
                     Debug.Log("Orc selected");
                     morphesAnimator.SetTrigger("Ogre");
                     bodiesHandler.SetBody(MorphType.Orc);
                     break;
                 }
         }
+        currentMorph = type;
+        rafRemain--;
     }
 
 }
