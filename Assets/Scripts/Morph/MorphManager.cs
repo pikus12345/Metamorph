@@ -15,15 +15,22 @@ public class MorphManager : MonoBehaviour
     [SerializeField] InputActionAsset inputActions;
     [SerializeField] Animator morphesAnimator;
     [SerializeField] byte rafRemain = 0;
+
+    private MorphUI morphUI;
     private InputAction morphKnightAction;
     private InputAction morphLizardAction;
     private InputAction morphOrcAction;
+
+    private bool isKnightOpened = false;
+    private bool isLizardOpened = false;
+    private bool isOrcOpened = false;
 
     private void Awake()
     {
         morphKnightAction = inputActions.FindActionMap("Player").FindAction("MorphKnight");
         morphLizardAction = inputActions.FindActionMap("Player").FindAction("MorphLizard");
         morphOrcAction = inputActions.FindActionMap("Player").FindAction("MorphOrc");
+        morphUI = FindAnyObjectByType<MorphUI>();
     }
     private void OnEnable()
     {
@@ -46,11 +53,32 @@ public class MorphManager : MonoBehaviour
     private void MorphKnight(InputAction.CallbackContext context) => Morph(MorphType.Knight);
     private void MorphLizard(InputAction.CallbackContext context) => Morph(MorphType.Lizard);
     private void MorphOrc(InputAction.CallbackContext context) => Morph(MorphType.Orc);
-
+    public MorphType CurrentMorph => currentMorph;
+    public void OpenKnightMorph()
+    {
+        isKnightOpened = true;
+        morphUI.OpenKnightMorph();
+    }
+    public void OpenLizardMorph()
+    {
+        isLizardOpened = true;
+        morphUI.OpenLizardMorph();
+    }
+    public void OpenOrcMorph()
+    {
+        isOrcOpened = true;
+        morphUI.OpenOgreMorph();
+    }
+    public void AddRafs(byte amount)
+    {
+        rafRemain++;
+    }
+    public byte RafRemain => rafRemain;
     internal void Morph(MorphType type)
     {
         if (rafRemain == 0 || currentMorph == type) return;
         rafRemain--;
+        currentMorph = type;
         switch (type)
         {
             case MorphType.Knight:

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7340444796721847774}
   - component: {fileID: 9123004237823565756}
   - component: {fileID: 3021392733286927072}
+  - component: {fileID: 59225918544605958}
   m_Layer: 0
   m_Name: raf
   m_TagString: Untagged
@@ -113,6 +114,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &59225918544605958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2697410185489448071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab3dd05ed6b994140bb93f431f6dbf89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  Hint: 
+  OpenKnight: 0
+  OpenLizard: 0
+  OpenOgre: 0
 --- !u!1 &6864667650352563020
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,6 +140,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5567311143044842268}
   - component: {fileID: 5346597085435149104}
+  - component: {fileID: 3701765332427094031}
   m_Layer: 0
   m_Name: Raf
   m_TagString: Untagged
@@ -167,3 +185,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0.63, z: 0}
+--- !u!114 &3701765332427094031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6864667650352563020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab3dd05ed6b994140bb93f431f6dbf89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Raf
+  Hint: "[F] \u0412\u044B\u043F\u0438\u0442\u044C"
+  OpenKnight: 0
+  OpenLizard: 1
+  OpenOgre: 0

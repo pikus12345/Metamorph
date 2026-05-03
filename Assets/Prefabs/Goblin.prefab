@@ -12,10 +12,6 @@ PrefabInstance:
       propertyPath: m_text
       value: "\u0413\u043E\u0431\u043B\u0438\u043D"
       objectReference: {fileID: 0}
-    - target: {fileID: 3039484064256519350, guid: 9d48c0137544a1d40b19169e70b0287c, type: 3}
-      propertyPath: m_fontSize
-      value: 0.35
-      objectReference: {fileID: 0}
     - target: {fileID: 5861057019773468155, guid: 9d48c0137544a1d40b19169e70b0287c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2

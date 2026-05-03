@@ -50,9 +50,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthDisplayer
   heartPrefab: {fileID: 4654628082743063111, guid: 2c7ac8a9589ed7147a50e6f0ebb4e8a7, type: 3}
-  fullHeart: {fileID: 104810581, guid: 2bbc58fb571476a43a918bf8c704e682, type: 3}
-  halfHeart: {fileID: -2135205613, guid: 2bbc58fb571476a43a918bf8c704e682, type: 3}
-  emptyHeart: {fileID: 2132706134, guid: 2bbc58fb571476a43a918bf8c704e682, type: 3}
+  fullHeart: {fileID: 21300000, guid: e38386ed798f14e61b2a944852757cd7, type: 3}
+  halfHeart: {fileID: 21300000, guid: 00ca8ed41ac404996aafb0ceb79f237b, type: 3}
+  emptyHeart: {fileID: 21300000, guid: 596fc991d867b4bd7af99552fe118feb, type: 3}
 --- !u!114 &7292591374504121227
 MonoBehaviour:
   m_ObjectHideFlags: 0

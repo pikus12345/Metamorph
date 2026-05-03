@@ -69,14 +69,14 @@ MonoBehaviour:
     \u041D\u0443\u0436\u043D\u043E \u043D\u0430\u0439\u0442\u0438 \u0440\u044B\u0447\u0430\u0433,
     \u0447\u0442\u043E\u0431\u044B \u043E\u0442\u043A\u0440\u044B\u0442\u044C \u0435\u0451."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d216886746475c2409c0835d86207a29, type: 2}
-  m_sharedMaterial: {fileID: 6758059184700057588, guid: d216886746475c2409c0835d86207a29, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b961ab4e893ac2646885e8fe1201ccb9, type: 2}
+  m_sharedMaterial: {fileID: -4457913142724941770, guid: b961ab4e893ac2646885e8fe1201ccb9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3003121663
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
