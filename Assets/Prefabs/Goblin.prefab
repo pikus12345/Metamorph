@@ -105,7 +105,8 @@ PrefabInstance:
       value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1525362462477571150, guid: 9d48c0137544a1d40b19169e70b0287c, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5861057019773468155, guid: 9d48c0137544a1d40b19169e70b0287c, type: 3}
       insertIndex: -1
